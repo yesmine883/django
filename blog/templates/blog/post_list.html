@@ -1,0 +1,10 @@
+<h1>Liste des posts</h1>
+<a href="{% url 'post_new' %}">Poster</a>
+<ul>
+  {% for post in object_list %}
+    <li>
+      <h2>{{ post.title }}</h2>
+      <a href="{% url 'post_detail' post.pk %}">Détail</a>
+    </li>
+  {% endfor %}
+</ul>

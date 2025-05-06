@@ -1,0 +1,9 @@
+{% extends "magasin/base.html" %}
+{% block content %}
+<h2>Se connecter</h2>
+<form method="post">{% csrf_token %}
+  {{ form.as_table }}
+  <button type="submit">Se connecter</button>
+</form>
+<small>Pas encore inscrit.e? <a href="{% url 'register' %}">S'inscrire</a></small>
+{% endblock %}

@@ -1,0 +1,9 @@
+<h1>Supprimer ce post ?</h1>
+<p>{{ object.title }}</p>
+<form method="post">
+  {% csrf_token %}
+  <button type="submit">Confirmer la suppression</button>
+</form>
+<a href="{% url 'post_list' %}">Annuler</a>
+
+

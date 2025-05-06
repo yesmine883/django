@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Création d'un design étape par étape - Etape n°1 : Le code xhtml</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    #conteneur {
+      width: 80%;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #header {
+      background: #3498db;
+      padding: 20px;
+      margin: 0;
+    }
+
+    #header a {
+      text-decoration: none;
+      color: white;
+      font-size: 28px;
+    }
+
+    nav {
+      background: #2c3e50;
+    }
+
+    #menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    #menu li {
+      flex: 1;
+    }
+
+    #menu li a {
+      display: block;
+      padding: 15px;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    #menu li a:hover {
+      background: #1abc9c;
+    }
+
+    #contenu {
+      padding: 20px;
+    }
+
+    #contenu h2 {
+      color: #2c3e50;
+    }
+
+    #footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      background: #ecf0f1;
+      color: #7f8c8d;
+    }
+  </style>
+</head>
+<body>
+  <div id="conteneur">
+    <h1 id="header"><a href="#" title="Colored Design - Accueil"><span>Colored Design</span></a></h1>
+    
+    <nav>
+      <ul id="menu">
+        <li><a href="/magasin/">Application n°1 : Magasin</a></li>
+        <li><a href="#">Application n°2</a></li>
+        <li><a href="#">Application n°3</a></li> 
+      </ul>
+    </nav>
+    
+    <div id="contenu">
+      <h2>Un titre</h2>
+      <p>Un paragraphe</p>
+    </div>
+    
+    <p id="footer">Réalisation des codes HTML/CSS, du tutoriel et du design par ElMoustiko</p>
+  </div>
+</body>
+</html>
